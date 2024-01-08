@@ -3,12 +3,12 @@ let personagem = {
     idade: 24,
     carros: [
         {modelo: 'Fiat', cor: 'preto'},
-        {modelo: 'Ferrari', cor: 'vermelho'}
+        {modelo: 'Ferrari', cor: 'vermelha'}
     ]
     
 }
 
-console.log(personagem.carros[1].modelo);
+console.log(personagem.carros[1].modelo, personagem.carros[1].cor);
 
 //console.log(`${personagem.nome} tem ${personagem.idade} anos.`)
 //console.log(`e possui ${personagem.status.forca} de status STR `);
