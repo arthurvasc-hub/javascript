@@ -1,9 +1,14 @@
-let = char = new Archer('Tutu')
+let log = new Log(document.querySelector('.log'));
+let char = new Archer('Tutu');
+let monster = new LittleMonster();
 
-console.log(`O tutuzin é sinistro, vulgo ${char.name} SINISTRO NO DOTA. ELe tem ${char.attack} de força e ${char.life} de vida `)
+let stage = new Stage( 
+    char,
+    monster,
+    document.querySelector('#char'),
+    document.querySelector('#monster'),
+    log
+);
 
 
-let = char = new Knight('Bieca')
-
-console.log(`O grande ${char.name} é muito fraquinho no dota. Ele tem ${char.attack} de força e ${char.life} de vida `)
-
+stage.start();
