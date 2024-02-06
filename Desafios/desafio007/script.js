@@ -1,6 +1,6 @@
 let log = new Log(document.querySelector('.log'));
-let char = new Archer('Tutu');
-let monster = new LittleMonster();
+let char = new Knight('Missassica');
+let monster = new BigMonster();
 
 let stage = new Stage( 
     char,
