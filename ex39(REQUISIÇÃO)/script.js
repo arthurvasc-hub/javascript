@@ -6,7 +6,7 @@ function clicou(){
         return response.json();
    })
    .then((json) => {
-    console.log(json[0].title);
+    console.log(json);
    })
 }
 
