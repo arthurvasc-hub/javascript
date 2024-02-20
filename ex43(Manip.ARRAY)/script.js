@@ -1,8 +1,17 @@
-let lista = ['Ovo', 'Farinha', 'Corante', 'Massa'];
+let lista = [
+    {id:1, nome: 'Tutu', sobrenome: 'Vasconcelos'},
+    {id:2, nome: 'Damzik', sobrenome: 'Shadow'},
+    {id:3, nome: 'Massica', sobrenome: 'Margay'}
+];
 
-lista[4] = 'Liquidificador'
+let pessoa = lista.find(function(x){
+    return (x.sobrenome == 'Margay')? true : false;
+})
 
 
-let res = lista
+
+
+
+let res = pessoa;
 
 console.log(res)
